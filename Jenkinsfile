@@ -16,11 +16,6 @@ pipeline {
         sh './terraformw apply -auto-approve -no-color'
       }
     }
-  post {
-    always {
-      cleanWs()
-    }
-  }
     stage('Plan') {
             steps {
                 script {
