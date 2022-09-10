@@ -22,8 +22,7 @@ pipeline {
       cleanWs()
     }
   }
-  stages {
-        stage('Plan') {
+    stage('Plan') {
             steps {
                 script {
                     currentBuild.displayName = params.version
